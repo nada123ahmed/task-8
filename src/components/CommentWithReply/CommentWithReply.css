@@ -1,0 +1,22 @@
+.main-container {
+    padding: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.content-section {
+    margin-bottom: 16px;
+}
+
+.reply-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.reply-button:hover {
+    background-color: #0056b3;
+}

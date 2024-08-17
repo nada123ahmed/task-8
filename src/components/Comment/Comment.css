@@ -1,0 +1,345 @@
+
+
+#comment-section {
+  width: 100%;
+  max-width: 600px;
+
+  height: auto;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 100px;
+}
+
+#comment {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  line-height: 20px;
+}
+
+#vote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  background-color: #f5f6fa;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+#upvote, #downvote {
+  margin: 5px 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #c5c6c9;
+}
+
+#score {
+  font-weight: bold;
+  background-color: #f5f6fa;
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 0;
+}
+
+#comment-content {
+  flex: 1;
+  position: relative;
+}
+
+#reply {
+  background-color: transparent;
+  border: none;
+  color: #5357b6;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+#reply-arrow {
+  margin-right: 5px;
+}
+
+#comment-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+#username {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+#time {
+  color: #67727e;
+  margin-right: auto;
+}
+
+#comment-text {
+  margin-bottom: 10px;
+  color: #67727e;
+}
+
+.Edit {
+  background-color: transparent;
+  border: none;
+  color: #5357b6;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 3px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+.Edit::before {
+  content: url('../../assets/images/icon-edit.svg'); /* Path to your pencil icon */
+  margin-right: 5px;
+}
+
+.Delete {
+  background-color: transparent;
+  border: none;
+  color: rgb(224, 121, 121);
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  margin-right: 80px;
+  font-weight: bold;
+}
+
+.Delete::before {
+  content: url('../../assets/images/icon-delete.svg'); /* Path to your trash icon */
+  margin-right: 5px;
+}
+
+.answers {
+  margin-left: 40px;
+  margin-top: 15px;
+}
+
+/* Style for the reply input form */
+.reply-form {
+  display: flex;
+  flex-direction: row; /* Align items in a row */
+  align-items: center; /* Center items vertically */
+  margin-top: 10px;
+}
+
+.reply-form textarea {
+  flex: 1; /* Take up remaining space */
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-right: 10px; 
+  font-size: 14px;
+  line-height: 1.5;
+  resize: vertical;
+}
+
+.reply-form button {
+  background-color: #5357b6; 
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.reply-form button:hover {
+  background-color: #4342a1;
+}
+/* Existing CSS rules here */
+
+.mention {
+  color: #5357b6; /* Color matching the reply button */
+  font-weight: bold;
+}
+
+
+/* Style for the edit input form */
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.edit-form textarea {
+  width: 85%;
+  padding: 35px;
+  border-radius: 5px;
+  border: 1px solid #efe5e5;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.5;
+  resize: vertical;
+}
+
+.edit-form button {
+  align-self: flex-end;
+  background-color: #5357b6; /* Matching the color of the reply button */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.edit-form button:hover {
+  background-color: #4342a1;
+}
+
+/* Style for the reply-to text */
+.reply-to {
+  color: blue;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+@media (max-width: 767px) {
+  #comment-section {
+    padding: 10px;
+    max-width: 1200px;
+  }
+
+  #comment {
+    flex-direction: column;
+  }
+
+  #vote {
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-right: 0;
+    margin-top: 15px;
+    width: 100px;
+  }
+
+  #upvote, #downvote {
+    margin: 0 10px;
+  }
+
+  #score {
+    margin: 0 10px;
+  }
+
+  #reply {
+    position: absolute;
+    bottom: -40px;
+    right: 15px;
+    top: auto;
+    margin-top: 0;
+  }
+
+  .Edit {
+    bottom: 0;
+    right: 60px;
+    margin-top: 160px;
+  }
+
+  .Delete {
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+    margin-top: 160px;
+    font-weight: bold;
+  }
+  .edit-form textarea {
+    width: 60%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #efe5e5;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+    resize: vertical;
+  }
+  .edit-form button {
+   position: absolute;
+   bottom: 0;
+   right: 10%;
+   margin-bottom: 20px;
+   font-weight: bold;
+  }
+  #comment-content {
+    order: -1;
+  }
+
+  #comment-header {
+    margin-bottom: 15px;
+  }
+
+  #comment-text {
+    margin-bottom: 15px;
+  }
+  
+#root{
+  
+  display: block;
+  /* justify-content: flex-start; */
+ 
+
+}
+}
+@media (max-width: 470px) {
+  .Delete {
+  
+    position: absolute;
+    top: 0;
+    right: 0;
+  
+    margin-left: 80px;
+    font-weight: bold;
+  }
+  .Edit {
+    background-color: transparent;
+    
+    position: absolute;
+    bottom: 0;
+    right: 3px;
+
+   
+  }
+  .reply-form button {
+  
+ 
+    padding: 8px 16px;
+    margin-left: 100px;
+    
+  }
+  
+}
+
+
+
+

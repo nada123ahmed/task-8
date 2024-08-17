@@ -1,0 +1,40 @@
+#comment-sent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 100px;
+    
+    max-width: 600px;
+    height: 50px;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 100px;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+  }
+  
+  input {
+    color: #67727e;
+    font-weight: bold;
+    font-size: 14px;
+    width: 470px;
+    height: 50px;
+    border: 1px solid #dee0e2;
+  }
+  
+  .send {
+    background-color: #5357b6; /* Set background color */
+    color: white;
+    /* font-weight: bold; */
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    width: 80px;
+    height: 35px;
+    margin-left: 10px;
+    margin-bottom: 18px;
+    border-radius: 4px;
+  }
+  
